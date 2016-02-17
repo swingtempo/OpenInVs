@@ -1,13 +1,7 @@
 # README
-## This is the README for your extension "open-in-vs2015" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## This is the README for the "Open in Visual Studio" etension 
+This extensions lets a user open the current file into Visual Studio 2013 or 2015.
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+If there an existing running instance, that will be used. Else a new instance will be loaded.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-** Enjoy!**
+Effectively this extension detects the location of Visual Studio and runs "devenv.exe /edit <filename>".

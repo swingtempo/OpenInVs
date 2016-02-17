@@ -16,17 +16,10 @@
         "onCommand:extension.openInVs2013",
         "onCommand:extension.openInVs2015"
     ],
+    "license": "SEE LICENSE IN LICENSE.md",
     "main": "./out/src/extension",
     "contributes": {
         "commands": [
-            // {
-            //     "command": "extension.openInVs2010",
-            //     "title": "Open in Visual Studio 2010"
-            // },
-            // {
-            //     "command": "extension.openInVs2012",
-            //     "title": "Open in Visual Studio 2012"
-            // },
             {
                 "command": "extension.openInVs2013",
                 "title": "Open in Visual Studio 2013"
