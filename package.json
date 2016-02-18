@@ -2,7 +2,7 @@
     "name": "open-in-vs",
     "displayName": "Open in Visual Studio",
     "description": "Open current file in Visual Studio",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "jayongg",
     "engines": {
         "vscode": "^0.10.6"
