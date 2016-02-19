@@ -24,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
             // Display a message box to the user
             var doc = vscode.window.activeTextEditor.document;
 
-            vscode.window.showInformationMessage('Launching Visual Studio ' + vsVersionName + '...');
+            //vscode.window.showInformationMessage('Launching Visual Studio ' + vsVersionName + '...');
             var isDirty = doc.isDirty; 
 
             var docPromise = Promise.resolve<boolean>(true);
