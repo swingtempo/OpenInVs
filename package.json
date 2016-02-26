@@ -2,7 +2,7 @@
     "name": "open-in-vs",
     "displayName": "Open in Visual Studio",
     "description": "Open current file in Visual Studio",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "jayongg",
     "engines": {
         "vscode": "^0.10.6"
@@ -39,6 +39,6 @@
     "devDependencies": {
         "typescript": "^1.7.5",
         "vscode": "^0.11.0",
-        "winreg": ">=0.0.17"
+        "winreg": ">=0.0.18"
     }
 }
