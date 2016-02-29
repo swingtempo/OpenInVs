@@ -44,6 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
                     key: "\\Software\\Wow6432Node\\Microsoft\\VisualStudio\\" + version
                 });
 
+                // TODO: Look up different folder for non-64 bit
                 regKey.get("InstallDir", function(err, result) {
                     var devenvPath = result.value + "devenv.exe";
                     var cp = require("child_process");
