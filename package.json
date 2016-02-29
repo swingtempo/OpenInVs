@@ -16,7 +16,7 @@
         "onCommand:extension.openInVs2013",
         "onCommand:extension.openInVs2015"
     ],
-    "license": "SEE LICENSE IN LICENSE",
+    "license": "SEE LICENSE IN LICENSE.MD",
     "main": "./out/src/extension",
     "contributes": {
         "commands": [
