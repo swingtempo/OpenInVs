@@ -23,15 +23,15 @@
         "commands": [
             {
                 "command": "extension.openInVs2013",
-                "title": "Open in Visual Studio 2013"
+                "title": "Open in Visual Studio 2013, fallback to 2012"
             },
             {
                 "command": "extension.openInVs2015",
-                "title": "Open in Visual Studio 2015"
+                "title": "Open in Visual Studio 2015, fallback to 2013"
             },
             {
                 "command": "extension.openInVs2017",
-                "title": "Open in Visual Studio 2017"
+                "title": "Open in Visual Studio 2017, fallback to 2015"
             }
         ],
         "keybindings": [
