@@ -8,8 +8,9 @@ Effectively this extension detects the location of Visual Studio and runs "deven
 
 Useful if you use VSCode as your editor, but need the power of the VSIDE for debugging or other things.
 
-Keybinding: Ctrl+shift+O will launch in VS 2015.  You can override this in your keybindings.json file. 
+Keybinding: Ctrl+shift+O will launch in VS 2017, then fall back to older versions.  You can override this in your keybindings.json file. 
 
 The commands in this extension are:
 extension.openInVs2013
 extension.openInVs2015
+extension.openInVs2017
