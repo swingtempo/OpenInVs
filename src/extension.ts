@@ -60,6 +60,7 @@ export function activate(context: vscode.ExtensionContext) {
     createExtension("extension.openInVs2012", "11.0", "2012");
     createExtension("extension.openInVs2013", "12.0", "2013");
     createExtension("extension.openInVs2015", "14.0", "2015");
+    createExtension("extension.openInVs2017", "15.0", "2017");
 }
 
 // this method is called when your extension is deactivated

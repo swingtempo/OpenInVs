@@ -14,7 +14,8 @@
         "onCommand:extension.openInVs2010",
         "onCommand:extension.openInVs2012",
         "onCommand:extension.openInVs2013",
-        "onCommand:extension.openInVs2015"
+        "onCommand:extension.openInVs2015",
+        "onCommand:extension.openInVs2017"
     ],
     "license": "SEE LICENSE IN LICENSE.MD",
     "main": "./out/src/extension",
@@ -27,11 +28,15 @@
             {
                 "command": "extension.openInVs2015",
                 "title": "Open in Visual Studio 2015"
+            },
+            {
+                "command": "extension.openInVs2017",
+                "title": "Open in Visual Studio 2017"
             }
         ],
         "keybindings": [
             {
-                "command": "extension.openInVs2015",
+                "command": "extension.openInVs2017",
                 "key": "ctrl+shift+o"
             }
         ]
@@ -43,7 +48,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "typescript": "^1.7.5",
+        "typescript": "^2.3.2",
         "vscode": "^0.11.0",
         "winreg": ">=0.0.18"
     }
