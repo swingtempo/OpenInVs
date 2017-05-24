@@ -2,7 +2,7 @@
     "name": "open-in-vs",
     "displayName": "Open in Visual Studio",
     "description": "Open current file in Visual Studio",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "publisher": "jayongg",
     "repository": {
         "type": "git",
@@ -51,10 +51,6 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "dependencies": {
-		"fs-extra": "^1.0.0",
-		"http-proxy-agent": "^1.0.0",
-		"https-proxy-agent": "^1.0.0",
-		"jsonc-parser": "^0.3.0",
 		"lodash.debounce": "^4.0.8",
 		"mkdirp": "^0.5.1",
 		"open": "*",
