@@ -2,7 +2,7 @@
     "name": "open-in-vs",
     "displayName": "Open in Visual Studio",
     "description": "Open current file in Visual Studio",
-    "version": "0.0.17",
+    "version": "0.0.18",
     "publisher": "jayongg",
     "repository": {
         "type": "git",
@@ -51,15 +51,8 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "dependencies": {
-		"lodash.debounce": "^4.0.8",
-		"mkdirp": "^0.5.1",
-		"open": "*",
-		"request-light": "^0.2.0",
-		"semver": "*",
-		"tmp": "0.0.28",
 		"vscode-debugprotocol": "^1.6.1",
 		"vscode-extension-telemetry": "0.0.4",
-		"yauzl": "^2.5.0",
         "winreg": ">=0.0.18"
     },
     "devDependencies": {
