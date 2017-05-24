@@ -45,16 +45,34 @@ export function activate(context : vscode.ExtensionContext) {
                                 .showInformationMessage('Error saving file');
                         }
 
-                        var regKey = new Winreg({
+                        let regKey = new Winreg({
                             hive: Winreg.HKLM,
                             key: "\\Software\\Wow6432Node\\Microsoft\\VisualStudio\\" + version
                         });
+                        let valueToGet = "InstallDir";
+                        
+                        if (version == "15.0") {
+                            // there's weird stuff here for VS2017+
+                            regKey = new Winreg({
+                                hive: Winreg.HKLM,
+                                // key: "\\SOFTWARE\\WOW6432Node\\Microsoft\\VisualStudio\\SxS\\VS7"
+                                key: "\\Software\\Wow6432Node\\Microsoft\\VisualStudio\\SxS\\VS7"
+                            });
+                            valueToGet = version;
+                        }
 
                         // TODO: Look up different folder for non-64 bit
-                        regKey.get("InstallDir", function (err, result) {
+                        regKey.get(valueToGet, function (err, result) {
                             if (result != null) {
-                                var devenvPath = result.value + "devenv.exe";
-                                var cp = require("child_process");
+                                let  devenvPath = result.value;
+
+                                if (valueToGet === version) {
+                                    // it's VS2017, append to the path
+                                    devenvPath += "Common7\\IDE\\";
+                                }
+                                devenvPath += "devenv.exe";
+
+                                let cp = require("child_process");
                                 cp.execFile(devenvPath, ["/edit", docFilename]);
                             }
                             else
