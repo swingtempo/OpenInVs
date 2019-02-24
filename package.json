@@ -3,10 +3,10 @@
     "displayName": "Open in Visual Studio",
     "description": "Open current file in Visual Studio",
     "version": "0.0.19",
-    "publisher": "jayongg",
+    "publisher": "swingtempo",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jayongg/OpenInVs.git"
+        "url": "https://github.com/swingtempo/OpenInVs.git"
     },
     "engines": {
         "vscode": "^0.10.6"
